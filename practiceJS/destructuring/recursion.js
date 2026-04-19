@@ -1,5 +1,9 @@
-const numbers = [1, 2, 3];
+const profile = {
+  title: 'Engineer',
+  department: 'Engineering'
+};
 
-function double() {
-    return numbers.map(n => n * 2);
+function isEngineer(profile) {
+  const { title, department } = profile;
+  return title === 'Engineer' && department === 'Engineering';
 }
